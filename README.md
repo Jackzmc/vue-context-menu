@@ -63,14 +63,6 @@ You can see we provided the `cat` as the second parameter to `contextMenu.open`.
 
 ```vue
   <ContextMenu ref="contextMenu">
-    <template v-slot="slotProps"> <!-- slotsProps are props passed from child to slot in parent -->
-      <!-- Now, here slotProps.ctx does contain the context (cat) BUT -->
-      <template v-if="slotProps.ctx"> <!-- we need to add this since context is null on initial render -->
-        <!-- Now we can peacefully access slotProps.ctx without getting any errors -->
-
-        {{ slotProps.ctx.name }}
-      <template>
-    </template>
   </ContextMenu>
 ```
 

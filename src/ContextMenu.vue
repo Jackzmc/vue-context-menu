@@ -4,31 +4,32 @@
 		'left': `${position.x}px`,
 		'top': `${position.y}px`,
 	}">
-		<slot :ctx="ctx" />
+		<slot />
 	</div>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue'
+
 let container = ref()
 let isOpen = ref(false)
 let position = ref({
 	x: 0,
 	y: 0
 })
-let ctx = ref()
-function open(event, ctx) {
+
+function open(event) {
 	if (event) {
 		position.value.x = event.pageX;
 		position.value.y = event.pageY;
 	}
-	
-	ctx.value = ctx;
+
+	// ctx.value = ctx;
 	isOpen.value = true;
 }
 
 function close() {
-	this.isOpen = false;
+	isOpen.value = false;
 }
 
 defineExpose({
