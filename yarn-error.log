@@ -1,0 +1,56 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Jackz\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\PuTTY;C:\Program Files (x86)\WinSCP;D:\Software\FFMPEG\bin;D:\Software\youtube-dl;C:\Program Files\PowerShell\6.0.1;C:\Program Files (x86)\GtkSharp\2.12\bin;D:\Software\PHP;D:\Software\ngrok;C:\Program Files\dotnet;C:\Users\Jackz\AppData\Roaming\nvm;C:\Windows\System32\OpenSSH;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\GnuPG\bin;D:\Software\cmd;D:\Software\Python\Scripts;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;D:\Software\pstools;D:\Software\apache-maven-3.6.1\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;D:\Software\gradle-6.0.1\bin;D:\Software\mongodb-win32-x86_64-2012plus-4.2.1\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;S:\Jackz\Documents\Sourcepawn\sm_1_10_6502;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files (x86)\sox-14-4-2;D:\Software\scrcpy-win64-v1.15.1;C:\Android;C:\MinGW\bin;C:\Program Files\WireGuard;C:\Program Files (x86)\dotnet;C:\Program Files\Oracle\VirtualBox;D:\SteamCMD;C:\Program Files\Git\cmd;C:\Program Files\CMake\bin;C:\Users\Jackz\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MySQL\MySQL Server 8.0\lib;C:\Program Files\Tesseract-OCR;C:\Users\Jackz\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\Jackz\AppData\Local\Programs\Python\Python39;C:\Users\Jackz\.cargo\bin;C:\Users\Jackz\AppData\Local\Programs\Python\Python36-32\Scripts;C:\Users\Jackz\AppData\Local\Programs\Python\Python36-32;C:\Users\Jackz\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Jackz\.windows-build-tools\python27;C:\Users\Jackz\AppData\Local\Programs\Fiddler;C:\Program Files (x86)\Nmap;C:\Users\Jackz\AppData\Local\now-cli;C:\Users\Jackz\AppData\Roaming\nvm;C:\Users\Jackz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Jackz\go\bin;C:\Users\Jackz\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\Jackz\AppData\Roaming\spedit\sourcepawn\configs\sm_1_8_5914;C:\Users\Jackz\AppData\Local\GitHubDesktop\bin;C:\Users\Jackz\.deno\bin;C:\Users\Jackz\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\DataGrip 2021.2.3\bin;C:\Users\Jackz\AppData\Roaming\npm;C:\Users\Jackz\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Jackz\AppData\Local\Yarn\bin;C:\Users\Jackz\.dotnet\tools
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  16.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: S:\Jackz\Documents\Code\git\vue-context-menu\package.json: Unexpected token } in JSON at position 619
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:310:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "@overcoder/vue-context-menu",
+    "version": "0.1.3",
+    "description": "Context menus for VueJS",
+    "author": "Yousef Sultan <yousef.su.2000@gmail.com>",
+    "private": false,
+    "main": "./src/ContextMenu.vue",
+    "license": "MIT",
+    "keywords": [
+      "vue",
+      "context",
+      "menu",
+      "right click"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/MicroDroid/vue-context-menu.git"
+    },
+    "homepage": "https://github.com/MicroDroid/vue-context-menu",
+    "bugs": {
+      "url": "https://github.com/MicroDroid/vue-context-menu/issues"
+    },
+    "dependencies": {
+      "vue": "^3.2.13",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

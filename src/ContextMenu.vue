@@ -8,51 +8,44 @@
 	</div>
 </template>
 
-<script>
-	export default {
-		data() {
-			return {
-				isOpen: false,
-				position: {
-					x: 0,
-					y: 0,
-				},
-				ctx: null,
-			};
-		},
+<script setup>
+import { ref, onMounted } from 'vue'
+let container = ref()
+let isOpen = ref(false)
+let position = ref({
+	x: 0,
+	y: 0
+})
+let ctx = ref()
+function open(event, ctx) {
+	if (event) {
+		position.value.x = event.pageX;
+		position.value.y = event.pageY;
+	}
+	
+	ctx.value = ctx;
+	isOpen.value = true;
+}
 
-		methods: {
-			open(event, ctx) {
-				if (event) {
-					this.position.x = event.pageX;
-					this.position.y = event.pageY;
-				}
-				
-				this.ctx = ctx;
-				this.isOpen = true;
-			},
+function close() {
+	this.isOpen = false;
+}
 
-			close() {
-				this.isOpen = false;
-			},
-		},
+onMounted(() => {
+	document.addEventListener('click', e => {
+		if (!container.value || !isOpen.value)
+			return;
 
-		mounted() {
-			document.addEventListener('click', e => {
-				if (!this.$refs.container || !this.isOpen)
-					return;
+		const insideMenu = container.value.contains(e.target);
 
-				const insideMenu = this.$refs.container.contains(e.target);
-
-				if (!insideMenu)
-					this.isOpen = false;
-			});
-		}
-	};
+		if (!insideMenu)
+			isOpen.value = false;
+	});
+})
 </script>
 
 <style scoped>
-	.container {
-		position: absolute;
-	}
+.container {
+	position: absolute;
+}
 </style>

@@ -21,6 +21,6 @@
     "url": "https://github.com/MicroDroid/vue-context-menu/issues"
   },
   "dependencies": {
-    "vue": "^2.6.10"
+    "vue": "^3.2.13"
   }
 }
