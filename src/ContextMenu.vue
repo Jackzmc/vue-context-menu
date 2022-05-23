@@ -31,6 +31,11 @@ function close() {
 	this.isOpen = false;
 }
 
+defineExpose({
+	open,
+	close
+})
+
 onMounted(() => {
 	document.addEventListener('click', e => {
 		if (!container.value || !isOpen.value)
