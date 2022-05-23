@@ -4,7 +4,7 @@
 		'left': `${position.x}px`,
 		'top': `${position.y}px`,
 	}">
-		<slot />
+		<slot :ctx="ctx" />
 	</div>
 </template>
 
@@ -18,13 +18,14 @@ let position = ref({
 	y: 0
 })
 
-function open(event) {
+let ctx = ref({})
+
+function open(event, _ctx) {
 	if (event) {
 		position.value.x = event.pageX;
 		position.value.y = event.pageY;
 	}
-
-	// ctx.value = ctx;
+  ctx.value = _ctx
 	isOpen.value = true;
 }
 
